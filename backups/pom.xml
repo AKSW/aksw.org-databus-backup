@@ -18,10 +18,10 @@
 			.
         </databus.packageDirectory>
         <databus.downloadUrlPath>
-            https://downloads.dbpedia.org/repo/lts/${project.groupId}/${project.artifactId}/${project.version}/
+          https://github.com/AKSW/aksw.org-databus-backup/raw/master/${project.groupId}/${project.artifactId}/${project.version}/
         </databus.downloadUrlPath>
-        <databus.publisher>https://kurzum.net/webid.ttl#this</databus.publisher>
-        <databus.pkcs12File>/home/shellmann/.ssh/webid_cert/certificate.pfx</databus.pkcs12File>
+        <databus.publisher>https://natanael.arndt.xyz/#i</databus.publisher>
+        <databus.pkcs12File>/tmp/certificate.pfx</databus.pkcs12File>
         <databus.maintainer>https://kurzum.net/webid.ttl#this</databus.maintainer>
         <databus.license>http://purl.oclc.org/NET/rdflicense/cc-by-sa3.0</databus.license>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
