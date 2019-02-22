@@ -1,0 +1,94 @@
+
+
+######
+#     #   ##   #####   ##   #####  #    #  ####
+#     #  #  #    #    #  #  #    # #    # #
+#     # #    #   #   #    # #####  #    #  ####
+#     # ######   #   ###### #    # #    #      #
+#     # #    #   #   #    # #    # #    # #    #
+######  #    #   #   #    # #####   ####   ####
+
+# Plugin version 1.3-SNAPSHOT - https://github.com/dbpedia/databus-maven-plugin
+
+
+@prefix databus: <https://databus.dbpedia.org/> .
+@prefix dataid-mt: <http://dataid.dbpedia.org/ns/mt#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix dataid: <http://dataid.dbpedia.org/ns/core#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dataid-cv: <http://dataid.dbpedia.org/ns/cv#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dataid-pl: <http://dataid.dbpedia.org/ns/pl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+<https://databus.dbpedia.org/white_gecko/backups>
+        a       dataid:Group .
+
+dataid-mt:TextTurtle  a  dataid-mt:MediaType ;
+        dataid:mimetype  "text/turtle" .
+
+<https://github.com/AKSW/aksw.org-databus-backup/raw/master/backups/aksw-website-backup/2019.02.22/dataid.ttl>
+        a                       dataid:DataId ;
+        rdfs:comment            "Metadata created by the DBpedia Databus Maven Plugin: https://github.com/dbpedia/databus-maven-plugin (Version 1.3-SNAPSHOT)\nThe DataID ontology is a metadata omnibus, which can be extended to be interoperable with all metadata formats\nNote that the metadata (the dataid.ttl file) is always CC-0, the files are licensed individually\nMetadata created by https://natanael.arndt.xyz/#i" ;
+        rdfs:label              "DataID metadata for backups/aksw-website-backup"@en ;
+        dataid:associatedAgent  <https://natanael.arndt.xyz/#i> ;
+        dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion          "1.3-SNAPSHOT" ;
+        dct:issued              "2019-02-22T13:44:41Z"^^xsd:dateTime ;
+        dct:license             <http://purl.oclc.org/NET/rdflicense/cc-zero1.0> ;
+        dct:publisher           <https://natanael.arndt.xyz/#i> ;
+        dct:title               "DataID metadata for backups/aksw-website-backup"@en .
+
+<https://databus.dbpedia.org/white_gecko/backups/aksw-website-backup>
+        a       dataid:Artifact .
+
+<https://github.com/AKSW/aksw.org-databus-backup/raw/master/backups/aksw-website-backup/2019.02.22/dataid.ttl#Dataset>
+        a                       dataid:Dataset ;
+        rdfs:comment            "regular backup of the aksw.org website"@en ;
+        rdfs:label              "AKSW.org website backup"@en ;
+        dataid:account          databus:white_gecko ;
+        dataid:artifact         <https://databus.dbpedia.org/white_gecko/backups/aksw-website-backup> ;
+        dataid:associatedAgent  <https://natanael.arndt.xyz/#i> ;
+        dataid:group            <https://databus.dbpedia.org/white_gecko/backups> ;
+        dataid:maintainer       <https://kurzum.net/webid.ttl#this> ;
+        dataid:version          <https://databus.dbpedia.org/white_gecko/backups/aksw-website-backup/2019.02.22> ;
+        dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
+        dct:description         "## Description\nPlease note the cc-by-sa\n\n" ;
+        dct:hasVersion          "2019.02.22" ;
+        dct:issued              "2019-02-22T13:44:41Z"^^xsd:dateTime ;
+        dct:license             <http://purl.oclc.org/NET/rdflicense/cc-by-sa3.0> ;
+        dct:publisher           <https://natanael.arndt.xyz/#i> ;
+        dct:title               "AKSW.org website backup"@en ;
+        dcat:distribution       <https://github.com/AKSW/aksw.org-databus-backup/raw/master/backups/aksw-website-backup/2019.02.22/dataid.ttl#aksw-website-backup.ttl> .
+
+<https://github.com/AKSW/aksw.org-databus-backup/raw/master/backups/aksw-website-backup/2019.02.22/dataid.ttl#aksw-website-backup.ttl>
+        a                            dataid:SingleFile ;
+        rdfs:comment                 "regular backup of the aksw.org website"@en ;
+        rdfs:label                   "AKSW.org website backup"@en ;
+        dataid:associatedAgent       <https://natanael.arndt.xyz/#i> ;
+        dataid:compression           "None" ;
+        dataid:duplicates            "0"^^xsd:decimal ;
+        dataid:formatExtension       "ttl" ;
+        dataid:isDistributionOf      <https://github.com/AKSW/aksw.org-databus-backup/raw/master/backups/aksw-website-backup/2019.02.22/dataid.ttl#Dataset> ;
+        dataid:maintainer            <https://kurzum.net/webid.ttl#this> ;
+        dataid:nonEmptyLines         "8128"^^xsd:decimal ;
+        dataid:preview               "# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt\n\n@base <http://aksw.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix sysont: <http://ns.ontowiki.net/SysOnt/> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix sioc: <http://rdfs.org/sioc/ns#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix aair: <http://xmlns.notu.be/aair#> ." ;
+        dataid:sha256sum             "6d2bd18e8236461c72be098185ba6ef3b855f0cd5242bdc8681f1b8e0da1185f" ;
+        dataid:signature             "W0+/hr+1PtiUGTdCWl0FAupP5VbmO1uig+ab3A/wPL1fHclDsYfk5lxS0Z2H/Olb3pbVQaR4tRUG+28WgTRP1hXuVfC39HUUb4qptH3fewgKu3UrawCMKBkav/cDWz+psyFZaFhLuLWfGzNU8rcnEyhMuK9KfyQQg5Hjv37XCdweDfRkrDdxd/TeVpypbZk50PdeDNdzvmmW8vxMrPT9kdFkfjJ4qrIq1ZyCBgt1K+P5WE19RlRVyXplnfbKwcelBrcl5+0bUMTYHdyZy1cA6unDnDU9V8eDyVIssVj+GFwFzbxwC+C4GGKr07YBoGcD5A4ar85GxGX9qddaLJy1qw==" ;
+        dataid:sorted                false ;
+        dataid:uncompressedByteSize  "789799"^^xsd:decimal ;
+        dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
+        dct:hasVersion               "2019.02.22" ;
+        dct:issued                   "2019-02-22T13:44:41Z"^^xsd:dateTime ;
+        dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by-sa3.0> ;
+        dct:modified                 "2019-02-22T13:11:24Z"^^xsd:dateTime ;
+        dct:publisher                <https://natanael.arndt.xyz/#i> ;
+        dct:title                    "AKSW.org website backup"@en ;
+        dcat:byteSize                "791403"^^xsd:decimal ;
+        dcat:downloadURL             <https://github.com/AKSW/aksw.org-databus-backup/raw/master/backups/aksw-website-backup/2019.02.22/aksw-website-backup.ttl> ;
+        dcat:mediaType               dataid-mt:TextTurtle .
+
+<https://databus.dbpedia.org/white_gecko/backups/aksw-website-backup/2019.02.22>
+        a       dataid:Version .
